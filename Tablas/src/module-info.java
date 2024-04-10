@@ -1,6 +1,7 @@
 module Tablas {
 	requires javafx.controls;
 	requires javafx.fxml;
+	requires java.sql;
 	
-	opens application to javafx.graphics, javafx.fxml, java.base;
+	opens application to javafx.graphics, javafx.fxml, javafx.base;
 }
