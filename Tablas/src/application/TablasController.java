@@ -25,7 +25,7 @@ import javafx.scene.control.TableView;
 
 public class TablasController implements Initializable {
 	@FXML
-	private TableView<Vuelo> datosTabla;
+	private TableView datosTabla;
 	@FXML
 	private MenuBar MenuUp;
 	@FXML
@@ -41,13 +41,13 @@ public class TablasController implements Initializable {
 	@FXML
 	private MenuItem opcion3;
 	@FXML
-	private TableColumn <Vuelo, String>IdNumeroVuelo;
+	private TableColumn IdNumeroVuelo;
 	@FXML
-	private TableColumn <Vuelo, String> IdOrigenVuelo;
+	private TableColumn  IdOrigenVuelo;
 	@FXML
-	private TableColumn <Vuelo, String> IdDestinoVuelo;
+	private TableColumn  IdDestinoVuelo;
 	@FXML
-	private TableColumn <Vuelo, String> IdCodigoAvion;
+	private TableColumn  IdCodigoAvion;
 	@FXML
 	private Button IdBtnAgregar;
 	@FXML
@@ -79,10 +79,10 @@ public class TablasController implements Initializable {
 		// TODO Auto-generated method stub
 		
 	this.data = new Datos();
-	this.IdCodigoAvion.setCellValueFactory(new PropertyValueFactory("codigo_avion"));
-	this.IdDestinoVuelo.setCellValueFactory(new PropertyValueFactory("destino"));
-	this.IdOrigenVuelo.setCellValueFactory(new PropertyValueFactory("origen"));
-	this.IdNumeroVuelo.setCellValueFactory(new PropertyValueFactory("numero_vuelo"));
+	this.IdCodigoAvion.setCellValueFactory(new PropertyValueFactory ("codAvion"));
+	this.IdDestinoVuelo.setCellValueFactory(new PropertyValueFactory ("destino"));
+	this.IdOrigenVuelo.setCellValueFactory(new PropertyValueFactory ("origen"));
+	this.IdNumeroVuelo.setCellValueFactory(new PropertyValueFactory ("numero"));
 	datosTabla.setItems(this.datos);
 	
 	}
